@@ -5,20 +5,30 @@
         <el-col :span="24">
             <el-container>
                 <el-header>
-                    <network-switch />
+                    <main-header />
                 </el-header>
-                <el-main>Main</el-main>
+                <el-main>
+                    <app-account />
+                </el-main>
             </el-container>
         </el-col>
     </el-row>
 </template>
+<style>
+    body {
+        background: #081A2A;
+    }
+</style>
 
 <script>
-import NetworkSwitch from './network-swtich.vue'
+import MainHeader from './main-header.vue'
+import AppAccount from './account/index.vue'
+
 export default {
     name: 'Main',
     components: {
-      'network-switch': NetworkSwitch
+      'main-header': MainHeader,
+      'app-account': AppAccount
     },
     data: ()=>{
         return {

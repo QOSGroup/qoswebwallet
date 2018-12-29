@@ -62,7 +62,6 @@ module.exports = {
         new CopyWebpackPlugin([
             { from: path.join(APP_PATH, 'test.html'), to: 'test.html' },
             { from: path.join(APP_PATH, 'background.js'), to: 'background.js' },
-            { from: path.join(APP_PATH, 'style/treeit.css'), to: 'treeit.css' },
             { from: path.join(APP_PATH, 'chrome/manifest.json'), to: 'manifest.json' }
         ]),
         // new ExtractTextPlugin('[name].css')
