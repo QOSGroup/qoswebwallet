@@ -1,4 +1,4 @@
-import 'qweb'
+import QWeb from 'qweb'
 import Vue from 'vue'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
