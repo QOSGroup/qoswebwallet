@@ -44,10 +44,6 @@ module.exports = {
                 test: /\.vue$/,
                 exclude: /^node_modules$/,
                 use: 'vue-loader'
-            }, {
-                test: /\.json$/,
-                exclude: /^node_modules$/,
-                use: "json"
             },{
                 test: /\.(png|jpg)$/,
                 exclude: /^node_modules$/,
