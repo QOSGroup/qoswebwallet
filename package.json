@@ -17,7 +17,7 @@
   "license": "ISC",
   "dependencies": {
     "element-ui": "^2.4.11",
-    "qos-js-sdk": "github:QOSGroup/qweb#master",
+    "qweb": "github:QOSGroup/qweb#master",
     "vue": "^2.5.21"
   },
   "devDependencies": {
