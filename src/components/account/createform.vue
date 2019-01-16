@@ -7,7 +7,7 @@
                 <el-input v-model="input" placeholder="请输入账户名"></el-input>
             </el-form-item>
             <el-form-item>
-                <el-button type="primary" @click="submit('numberValidateForm')">提交</el-button>
+                <el-button type="primary" style="width: 100%" @click="submit('numberValidateForm')">创建账户</el-button>
             </el-form-item>
         </el-form>
 
