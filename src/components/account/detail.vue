@@ -27,8 +27,7 @@ export default {
     },
     methods: {
         show: function(){
-            console.log('show');
-            this.isShow = true;
+
         }
     }
 }

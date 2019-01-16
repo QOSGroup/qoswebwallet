@@ -8,13 +8,13 @@
             <h6 style="color: white;margin-left:3px;">总资产: 300000 RMB</h6>
         </el-col>
         <el-col :span="12">
-            <el-dropdown :hide-on-click="false" style="float:right">
+            <el-dropdown :hide-on-click="false" style="float:right" @command="handleCommand">
                 <span class="el-dropdown-link">
                     <el-button icon="el-icon-plus" circle></el-button>
                 </span>
                 <el-dropdown-menu slot="dropdown">
-                    <el-dropdown-item>创建账户</el-dropdown-item>
-                    <el-dropdown-item>导入账户</el-dropdown-item>
+                    <el-dropdown-item command="to.create.account">创建账户</el-dropdown-item>
+                    <el-dropdown-item command="to.import.account">导入账户</el-dropdown-item>
                 </el-dropdown-menu>
             </el-dropdown>
         </el-col>
@@ -35,9 +35,8 @@ export default {
 
     },
     methods: {
-        show: function(){
-            console.log('show');
-            this.isShow = true;
+        handleCommand(command){
+            this.bus.$emit(command)
         }
     }
 }
