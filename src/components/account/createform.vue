@@ -30,8 +30,13 @@ export default {
 
     methods: {
         submit(){
-            const newAccount = qweb.newAccount()
-            console.log('newAccount', newAccount)
+            //const newAccount = qweb.newAccount()
+            QWebWorker.createAccount().then((account)=>{
+                console.log('qweb.worker.createaccount', account)
+                qweb.account.get(account.address).then(res => {
+                    console.log('qweb.res.account', account)
+                })
+            })
         }
     }
 }
