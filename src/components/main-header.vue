@@ -1,17 +1,17 @@
 
 
 <template id="template-home">
-    <el-row :gutter="20">
-        <el-col :span="8">
+    <a-row  :gutter="20">
+        <a-col :span="8">
             <network-switch />
-        </el-col>
-        <el-col :span="8" style="text-align:center">
+        </a-col>
+        <a-col :span="8" style="text-align:center">
             <div class="logo"></div>
-        </el-col>
-        <el-col :span="6" :offset="2">
-            <el-button icon="el-icon-setting" plain circle style="float:right"></el-button>
-        </el-col>
-    </el-row>
+        </a-col>
+        <a-col :span="6" :offset="2">
+            <a-button icon="el-icon-setting" plain circle style="float:right"></a-button>
+        </a-col>
+    </a-row >
 </template>
 <style scoped>
     .logo {

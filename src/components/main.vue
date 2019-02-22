@@ -1,18 +1,16 @@
 
 
 <template id="template-home">
-    <el-row>
-        <el-col :span="24">
-            <el-container>
-                <el-header>
-                    <main-header />
-                </el-header>
-                <el-main>
-                    <app-account />
-                </el-main>
-            </el-container>
-        </el-col>
-    </el-row>
+    <a-layout>
+      <a-layout-header>
+        <main-header />
+      </a-layout-header>
+      <a-layout-content>
+        <!-- <app-account /> -->
+        <app-lock />
+      </a-layout-content>
+    </a-layout>
+
 </template>
 <style>
     body {
@@ -23,12 +21,14 @@
 <script>
 import MainHeader from './main-header.vue'
 import AppAccount from './account/index.vue'
+import AppLock from './lock/index.vue'
 
 export default {
     name: 'Main',
     components: {
       'main-header': MainHeader,
-      'app-account': AppAccount
+      'app-account': AppAccount,
+      'app-lock': AppLock
     },
     data: ()=>{
         return {

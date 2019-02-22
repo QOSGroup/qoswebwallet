@@ -1,11 +1,14 @@
 import QWeb from 'qweb'
 import QWebWorker from './QWebWorker'
 import Vue from 'vue'
-import ElementUI from 'element-ui'
-import 'element-ui/lib/theme-chalk/index.css'
+// import ElementUI from 'element-ui'
+import Antd from "ant-design-vue"
+
+import "ant-design-vue/dist/antd.css"
+// import 'element-ui/lib/theme-chalk/index.css'
 import main from './components/main.vue'
 
-Vue.use(ElementUI)
+Vue.use(Antd);
 Vue.prototype.bus = new Vue();
 
 console.log('===== Test =====')

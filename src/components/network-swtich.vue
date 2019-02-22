@@ -1,5 +1,5 @@
 <template>
-  <el-dropdown>
+  <!-- <el-dropdown>
     <span class="el-dropdown-link" style="color:#fff">
       主网络<i class="el-icon-arrow-down el-icon--right"></i>
     </span>
@@ -7,7 +7,20 @@
       <el-dropdown-item>测试网络</el-dropdown-item>
       <el-dropdown-item>自定义网络</el-dropdown-item>
     </el-dropdown-menu>
-  </el-dropdown>
+  </el-dropdown> -->
+   <a-dropdown>
+    <a class="ant-dropdown-link" href="#">
+      主网络 <a-icon type="down" />
+    </a>
+    <a-menu slot="overlay">
+      <a-menu-item>
+        <a href="javascript:;">测试网络</a>
+      </a-menu-item>
+      <a-menu-item>
+        <a href="javascript:;">自定义网络</a>
+      </a-menu-item>
+    </a-menu>
+  </a-dropdown>
 </template>
 
 <script>
