@@ -17,7 +17,6 @@
   "license": "ISC",
   "dependencies": {
     "ant-design-vue": "^1.3.4",
-    "element-ui": "^2.4.11",
     "qweb": "github:QOSGroup/qweb#master",
     "vue": "^2.5.21"
   },
